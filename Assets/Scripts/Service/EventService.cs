@@ -16,6 +16,7 @@ public class EventService
     public EventController OnLightSwitchToggled { get; private set; }
     public EventController<int> OnKeyPickedUp { get; private set; }
     public EventController OnLightsOffByGhostEvent { get; private set; }
+    public EventController OnRatRushEvent { get; private set; }
 
     public EventController PlayerEscapedEvent { get; private set; }
     public EventController PlayerDeathEvent { get; private set; }
@@ -25,6 +26,7 @@ public class EventService
         OnLightSwitchToggled = new EventController();
         OnKeyPickedUp = new EventController<int>();
         OnLightsOffByGhostEvent = new EventController();
+        OnRatRushEvent = new EventController();
 
         PlayerEscapedEvent = new EventController();
         PlayerDeathEvent = new EventController();
